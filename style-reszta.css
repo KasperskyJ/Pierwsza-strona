@@ -8,7 +8,7 @@
 
 header img {
 	width: 100%;
-	display: block;
+	display: flex;
 }
 
 #wrapper {
@@ -31,9 +31,8 @@ nav {
 
 a.menu {
 	display: inline-block;
-	width: 25%;
+	width: 20%;
 	padding: 30px 30px;
-	color: white;
 	text-decoration: none;
 	text-align: center;
 	transition: background-color 0.3s, color 0.3s;
@@ -41,10 +40,12 @@ a.menu {
 
 a.menu:hover {
 	background-color: rgb(41, 41, 41);
+	color: rgb(192, 0, 192);
 }
 
 .act {
 	background-color: rgb(41, 41, 41);
+	color: rgb(192, 0, 192);
 }
 
 article {
@@ -53,28 +54,33 @@ article {
 	padding: 0 20px;
 }
 
-h1 {
-	font-size: 30px;
-	text-align: center;
-	margin: 0 10% 50px 10%;
-	padding-bottom: 30px;
-	border-bottom: 2px solid purple;
-}
-
 article p {
 	text-align: justify;
 	line-height: 22px;
 	font-size: 13pt;
 }
 
-.left {
-	float: left;
-	margin: 10px 30px 10px 0px;
-	width: 34%;
+h1 {
+	font-size: 28px;
+	text-align: center;
+	margin: 0 10% 20px 10%;
+	padding-bottom: 30px;
+	border-bottom: 2px solid purple;
+	text-indent: 0px;
+}
+
+h2 {
+	font-size: 20px;
+	text-indent: 0px;
+	margin-bottom: 40px;
+}
+
+h3 {
+	text-indent: 0px;
+	margin: 5px 0 10px 0px;
 }
 
 iframe {
-	margin-top: 40px;
 	width: 100%;
 }
 
@@ -88,11 +94,29 @@ footer {
 	margin-top: 100px;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 700px) {
+	li {
+		font-size: 11pt;
+	}
+	span {
+		font-size: 10pt;
+	}
+
+	.profile-picture {
+		min-width: 30%;
+	}
+
+	h1 {
+		font-size: 18pt;
+	}
 	a.menu {
-		width: 50%;
+		width: 100%;
 	}
 	body {
-		background-image: URL("IMG/background-static.png")
+		background-image: URL("IMG/background-static.png");
+	}
+	footer {
+		font-size: 9px;
 	}
 }
