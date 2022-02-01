@@ -21,7 +21,8 @@ header img {
 body {
 	background: URL("IMG/Background-video.mp4");
 	background-size: cover;
-	background-position-x: center;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 nav {
@@ -63,7 +64,7 @@ article p {
 h1 {
 	font-size: 28px;
 	text-align: center;
-	margin: 0 10% 20px 10%;
+	margin: 70px 10% 100px 10%;
 	padding-bottom: 30px;
 	border-bottom: 2px solid purple;
 	text-indent: 0px;
@@ -94,7 +95,6 @@ footer {
 	margin-top: 100px;
 }
 
-
 @media (max-width: 700px) {
 	li {
 		font-size: 11pt;
@@ -119,4 +119,41 @@ footer {
 	footer {
 		font-size: 9px;
 	}
+}
+
+.portfolio h2 {
+	height: 1500px;
+	margin: 0px 20px 40px 50px;
+}
+
+.portfolio li {
+	padding: 0 0 80px 0;
+	list-style: none;
+	text-align: center;
+}
+
+.portfolio p {
+	font-weight: 400;
+	padding: 50px 50px 20px 20px;
+}
+
+.portfolio a {
+	padding: 10px 40px 10px 40px;
+	border: 2px solid rgb(120, 0, 120);
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+	transition: box-shadow 0.2s, shadow 0.7s;
+}
+
+.portfolio a:hover {
+	background-color: rgb(120, 0, 120);
+	box-shadow: 0 0 20px grey;
+}
+
+.kontakt {
+	margin: 80px 50px 40px 50px;
+}
+
+.kontakt p {
+	padding-right: 10px;
 }

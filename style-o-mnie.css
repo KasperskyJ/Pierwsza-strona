@@ -21,7 +21,8 @@ header img {
 body {
 	background: URL("IMG/Background-video.mp4");
 	background-size: cover;
-	background-position-x: center;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 nav {
@@ -105,7 +106,7 @@ h3 {
 span {
 	font-size: 13px;
 	color: grey;
-	text-align: center;
+	text-align: justify;
 	margin: 0 0 0 0px;
 	padding: 0px 20px 40px 20px;
 }
@@ -223,8 +224,9 @@ li {
 	li {
 		font-size: 11pt;
 	}
-	span {
+	span div {
 		font-size: 9pt;
+		text-align: center;
 	}
 
 	.profile-picture {
